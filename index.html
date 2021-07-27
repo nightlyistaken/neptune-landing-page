@@ -11,17 +11,33 @@
   	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+<a class="navbar-brand " href="#">
+    <img src="./breadMAIN.png" alt="logo" style="width:40px;" class="rounded-circle">
+  </a>
+  <ul class="navbar-nav">
+      <a class="nav-link" href="#">Documentation</a> 
+    
+      <a class="nav-link" href="#">Add to your server</a>
+    
+      <a class="nav-link" href="#">Bug Report</a>
+
+      <a class="nav-link disabled" href="#">In construction</a>
+  </ul>
+</nav>
 <br>
-	<div class="container text-center">
+	<div class="container text-center jumbotron bgxd">
 		
 		<h1>Botty</h1>
 		<h4>Manage your server with Ease</h4>
 		<br><br>
-		<input class="zi-input" placeholder="Enter your discord ID">
+		<h6>Why are you using the bot? *</h6>
+		<input class="zi-input" placeholder="*optional" id="val">
 		<br><br><br>
 		<button class="zi-btn shadow" onclick="document.location ='alert.html'">Submit</button>
 
 	</div>
 </body>
-<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="./main.js"></script>
 </html>
