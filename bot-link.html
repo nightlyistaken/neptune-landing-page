@@ -2,13 +2,14 @@
 <html class="dark-theme">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome | Home</title>
+	<title>Link | Home</title>
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
  	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@geist-ui/style@latest/dist/style.css">
   	<link rel="stylesheet" type="text/css" href="./style.css">
+
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -26,18 +27,22 @@
       <a class="nav-link disabled" href="crash">In construction</a>
   </ul>
 </nav>
-<br>
+
 	<div class="container text-center jumbotron" style="background-color: black;">
 		
-		<h1>Botty</h1>
-		<h4>Manage your server with Ease</h4>
+		<h1>Add your bot to the server :</h1>
+		<br>
+		<h4>Click the copy button to copy!</h4>
 		<br><br>
-		<h6>Why are you using the bot? *</h6>
-		<input class="zi-input" placeholder="*optional" id="val">
-		<br><br><br>
-		<button class="zi-btn shadow" onclick="document.location ='bot-link.html'">Submit</button>
+		<input class="zi-input" type="text" value="https://discord.com/api/oauth2/authorize?client_id=866357598290968627&permissions=8&scope=bot" id="myInput">
+		<button class="btn btn-dark" onclick="copyToClipboard()"  data-toggle="tooltip" data-placement="top" title="Copy to Clipboard!">Copy</button>
 
 	</div>
 </body>
 <script type="text/javascript" src="./main.js"></script>
+<script type="text/javascript">
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 </html>
