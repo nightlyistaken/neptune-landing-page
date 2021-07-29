@@ -1,7 +1,6 @@
-
 function submit() {
-	document.location('alert.html');
-}   
+  document.location("alert.html");
+}
 
 function copyToClipboard() {
   /* Get the text field */
@@ -13,4 +12,4 @@ function copyToClipboard() {
 
   /* Copy the text inside the text field */
   document.execCommand("copy");
-} 
+}

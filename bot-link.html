@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html class="dark-theme">
-<head>
-	<meta charset="utf-8">
-	<title>Link | Home</title>
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
- 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@geist-ui/style@latest/dist/style.css">
-  	<link rel="stylesheet" type="text/css" href="./style.css">
+  <head>
+    <meta charset="utf-8" />
+    <title>Link | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@geist-ui/style@latest/dist/style.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="./index.html">
+        <img
+          src="./breadMAIN.png"
+          alt="logo"
+          style="width: 40px"
+          class="rounded-circle"
+        />
+      </a>
+      <ul class="navbar-nav">
+        <a class="nav-link" href="./docs.html">Documentation</a>
 
-</head>
-<body>
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="nav-link" href="./bot-link.html">Add to your server</a>
 
-<a class="navbar-brand " href="./index.html">
-    <img src="./breadMAIN.png" alt="logo" style="width:40px;" class="rounded-circle">
-  </a>
-  <ul class="navbar-nav">
-      <a class="nav-link" href="./docs.html">Documentation</a> 
-    
-      <a class="nav-link" href="./bot-link.html">Add to your server</a>
-    
-      <a class="nav-link" href="./bugs_report.html">Bug Report</a>
+        <a class="nav-link" href="./bugs_report.html">Bug Report</a>
 
-      <a class="nav-link disabled" href="crash">In construction</a>
-  </ul>
-</nav>
+        <a class="nav-link disabled" href="crash">In construction</a>
+      </ul>
+    </nav>
 
-	<div class="container text-center jumbotron" style="background-color: black;">
-		
-		<h1>Add your bot to the server :</h1>
-		<br>
-		<h4>Click the copy button to copy!</h4>
-		<br><br>
-		<input class="zi-input" type="text" value="https://discord.com/api/oauth2/authorize?client_id=866357598290968627&permissions=8&scope=bot" id="myInput">
-		<button class="btn btn-dark" onclick="copyToClipboard()"  data-toggle="tooltip" data-placement="top" title="Copy to Clipboard!">Copy</button>
-
-	</div>
-</body>
-<script type="text/javascript" src="./main.js"></script>
-<script type="text/javascript">
-	$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-</script>
+    <div
+      class="container text-center jumbotron"
+      style="background-color: black"
+    >
+      <h1>Add your bot to the server :</h1>
+      <br />
+      <h4>Click the copy button to copy!</h4>
+      <br /><br />
+      <input
+        class="zi-input"
+        type="text"
+        value="https://discord.com/api/oauth2/authorize?client_id=866357598290968627&permissions=8&scope=bot"
+        id="myInput"
+      />
+      <button
+        class="btn btn-dark"
+        onclick="copyToClipboard()"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="Copy to Clipboard!"
+      >
+        Copy
+      </button>
+    </div>
+  </body>
+  <script type="text/javascript" src="./main.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 </html>
