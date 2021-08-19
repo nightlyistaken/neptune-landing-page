@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html class="dark-theme">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome | Home</title>
+    <meta charset="utf-8" />
+    <title>Name | botty</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -38,23 +38,9 @@
       </ul>
     </nav>
     <br />
-    <div
-      class="container text-center jumbotron"
-      style="background-color: black"
-    >
-      <h1>Botty</h1>
-      <h4>Manage your server with Ease</h4>
-      <br /><br />
-      <h6>Why are you using the bot? *</h6>
-      <input class="zi-input" placeholder="*optional" id="val" />
-      <br /><br /><br />
-      <button
-        class="zi-btn shadow " 
-        onclick="document.location ='bot-link.html'"
-      >
-        Submit
-      </button>
-    </div>
+    
+    <!--Content goes here-->
+
   </body>
   <script type="text/javascript" src="./main.js"></script>
 </html>
