@@ -1,72 +1,151 @@
 <!DOCTYPE html>
-<html class="dark-theme">
+<html class="dark">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Link | Home</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <title>Invite | Home</title>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
     <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css"
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@geist-ui/style@latest/dist/style.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@1.14.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
     />
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <a class="navbar-brand" href="./index.html">
-        <img
-          src="./breadMAIN.png"
-          alt="logo"
-          style="width: 40px"
-          class="rounded-circle"
-        />
-      </a>
-      <ul class="navbar-nav">
-        <a class="nav-link" href="./docs.html">Documentation</a>
-
-        <a class="nav-link" href="./bot-link.html">Add to your server</a>
-
-        <a class="nav-link" href="./bugs_report.html">Bug Report</a>
-
-        <a class="nav-link disabled" href="crash">In construction</a>
-      </ul>
-    </nav>
-
-    <div
-      class="container text-center jumbotron"
-      style="background-color: black"
-    >
-      <h1>Add your bot to the server :</h1>
-      <br />
-      <h4>Click the copy button to copy!</h4>
-      <br /><br />
-      <input
-        class="zi-input"
-        type="text"
-        value="https://discord.com/api/oauth2/authorize?client_id=866357598290968627&permissions=8&scope=bot"
-        id="myInput"
-      />
-      <button
-        class="btn btn-dark"
-        onclick="copyToClipboard()"
-        data-toggle="tooltip"
-        data-placement="top"
-        title="Copy to Clipboard!"
+<!-- Navbar start -->
+    <div class="p-3">
+      <div
+        class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-lg"
       >
-        Copy
-      </button>
+        <div class="flex-1 px-2 mx-2">
+          <div class="avatar pr-3">
+            <div class="rounded-full w-10 h-10 m-1">
+              <img src="./icon.png" alt="Planet Neptune" />
+            </div>
+          </div>
+          <span class="text-lg font-bold shadow-lg"> Neptune </span>
+        </div>
+        <div class="flex-none hidden px-2 mx-2 lg:flex">
+          <div class="flex items-stretch">
+            <a class="btn btn-ghost btn-sm rounded-btn" href="/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block w-6 h-6 stroke-current mr-2 w-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                ></path>
+              </svg>
+
+              Home
+            </a>
+            <a class="btn btn-ghost btn-sm rounded-btn" href="/bot-link.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block w-5 mr-2 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                ></path>
+              </svg>
+              Invite
+            </a>
+            <a
+              class="btn btn-ghost btn-sm rounded-btn"
+              href="https://github.com/dhairy-online/neptune-landing-page"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block w-5 mr-2 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                ></path>
+              </svg>
+              Edit this on github
+            </a>
+            <a
+              type="button"
+              href="https://github.com/dhairy-online/neptune"
+              class="
+                btn btn-ghost btn-sm
+                font-semibold
+                text-indigo-300
+                inline-block
+                mr-2
+                t
+              "
+              onclick="toggle()"
+            >
+              In progress
+            </a>
+          </div>
+        </div>
+        <div class="flex-none">
+          <a class="btn btn-square btn-ghost" href="/bot-link.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block w-6 h-6 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+<!-- Navbar end -->
+    <div class="hero">
+      <div class="text-center hero-content text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="text-5xl text-indigo-600 p-6 font-semibold">Invite me!</h1>
+          <input
+            class="input"
+            type="text"
+            value="https://discord.com/oauth2/authorize?client_id=891643593075335198&permissions=536870911991&scope=bot%20applications.commands"
+          />
+          <a
+            class="btn btn-dark"
+            href="https://discord.com/oauth2/authorize?client_id=891643593075335198&permissions=536870911991&scope=bot%20applications.commands"
+          >
+            Invite
+          </a>
+        </div>
+      </div>
     </div>
   </body>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
   <script type="text/javascript" src="./main.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
 </html>
